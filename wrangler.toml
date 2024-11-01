@@ -3,16 +3,32 @@ name = "cf-pages-d1"
 pages_build_output_dir = ".svelte-kit/cloudflare"
 compatibility_date = "2024-11-01"
 
+# ローカル環境
+[[kv_namespaces]]
+binding = "KV"
+id = "712704267bbc45c4bf7ebbf5c8c4b91b"
+preview_id = "random_kv_id"
+
 [[d1_databases]]
 database_id = "42554d86-f525-412f-8087-1cbb1105dd99"
 database_name = "DB"
 binding = "DB"
-preview_database_id = "DB"
+preview_database_id = "random_db_id"
+
+# プレビュー環境
+[[env.preview.kv_namespaces]]
+binding = "KV"
+id = "712704267bbc45c4bf7ebbf5c8c4b91b"
 
 [[env.preview.d1_databases]]
 database_id = "42554d86-f525-412f-8087-1cbb1105dd99"
 binding = "DB"
 database_name = "DB"
+
+# 本番環境
+[[env.production.kv_namespaces]]
+binding = "KV"
+id = "4bc382aa773b41e2861177aee73736ad"
 
 [[env.production.d1_databases]]
 database_id = "cdeac621-374b-4cf5-8f44-76368dec6e8e"
