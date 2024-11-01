@@ -2,6 +2,9 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	import type { PageServerData } from './$types';
+	
+	let { data }: { data: PageServerData } = $props();
 </script>
 
 <svelte:head>
@@ -26,6 +29,10 @@
 	</h2>
 
 	<Counter />
+
+	<pre>
+		{JSON.stringify(data)}
+	</pre>
 </section>
 
 <style>
