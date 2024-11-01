@@ -19,3 +19,7 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# wranglerのファイル群はローカルでのテスト用
+.wrangler
+wrangler.toml
