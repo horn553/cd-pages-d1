@@ -1,0 +1,4 @@
+[[d1_databases]]
+binding = "DB" # available in your Worker on env.DB
+database_name = "svelte-test"
+database_id = "42554d86-f525-412f-8087-1cbb1105dd99"

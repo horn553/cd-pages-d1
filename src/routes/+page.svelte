@@ -3,8 +3,9 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
 	import type { PageServerData } from './$types';
-	
+
 	let { data }: { data: PageServerData } = $props();
+	console.log({data});
 </script>
 
 <svelte:head>
