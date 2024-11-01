@@ -32,7 +32,7 @@
 	<Counter />
 
 	<pre>
-		{JSON.stringify(data)}
+		{JSON.stringify(data, null, '  ')}
 	</pre>
 </section>
 
