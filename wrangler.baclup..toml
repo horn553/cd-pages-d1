@@ -1,0 +1,8 @@
+name = "cf-pages-d1"
+pages_build_output_dir = "./.svelte-kit/cloudflare"
+
+[[d1_databases]]
+binding = "DB" # available in your Worker on env.DB
+database_name = "svelte-test"
+database_id = "42554d86-f525-412f-8087-1cbb1105dd99"
+preview_database_id = "DB"

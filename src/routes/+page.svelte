@@ -5,7 +5,7 @@
 	import type { PageServerData } from './$types';
 
 	let { data }: { data: PageServerData } = $props();
-	console.log({data});
+	console.log({ data });
 </script>
 
 <svelte:head>
